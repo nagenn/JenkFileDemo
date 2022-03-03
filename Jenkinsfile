@@ -6,12 +6,14 @@ pipeline {
     	stages {     	 
     	stage("Compile") {          	 
             	steps {               	 
-                	sh "mvn compile"          	 
+                	/* sh "mvn compile" */
+			sh "echo Compile"
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
         	steps {               	 
-                	sh "mvn test"          	 
+                	/* sh "mvn test" */
+			sh "echo unit test"
             	}     	 
         	}	 
     	}
